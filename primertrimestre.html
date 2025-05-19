@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejemplo completo de etiquetas y eventos HTML</title>
+</head>
+<body onload="alert('La página ha cargado correctamente.')">
+    
+    <!-- Encabezados -->
+    <h1>Encabezado nivel 1</h1>
+    <h2>Encabezado nivel 2</h2>
+    <h3>Encabezado nivel 3</h3>
+    <h4>Encabezado nivel 4</h4>
+    <h5>Encabezado nivel 5</h5>
+    <h6>Encabezado nivel 6</h6>
+
+    <!-- Párrafo -->
+    <p>Este es un párrafo. Se usa para mostrar bloques de texto.</p>
+
+    <!-- Listas ordenadas y desordenadas -->
+    <h3>Lista ordenada</h3>
+    <ol>
+        <li>Primer paso</li>
+        <li>Segundo paso</li>
+        <li>Tercer paso</li>
+    </ol>
+
+    <h3>Lista desordenada</h3>
+    <ul>
+        <li>Elemento A</li>
+        <li>Elemento B</li>
+        <li>Elemento C</li>
+    </ul>
+
+    <!-- Imagen -->
+    <h3>Imagen con atributo alt (accesibilidad)</h3>
+    <img src="imagen.jpg" alt="Descripción de la imagen">
+
+    <!-- Multimedia -->
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="ESTOY FUERA  Corto ganador 1er premio concurso Hacé cine ECU..mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+    </audio>
+
+    <h3>Video</h3>
+    <video width="320" height="240" controls>
+        <source src="ESTOY FUERA _ Corto ganador 1er premio concurso _Hacé cine_ ECU..mp4" type="video/mp4">
+        Tu navegador no soporta video HTML5.
+    </video>
+
+    <!-- Enlaces -->
+    <h3>Enlace a otra página</h3>
+    <a href="https://www.ejemplo.com" target="_blank" title="Ir a ejemplo.com">Visitar página externa</a>
+
+    <!-- Tabla -->
+    <h3>Tabla de ejemplo</h3>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>22</td>
+        </tr>
+    </table>
+
+    <!-- Formulario con eventos -->
+    <h3>Formulario</h3>
+    <form onsubmit="alert('Formulario enviado correctamente.'); return false;">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"
+               onfocus="console.log('Campo enfocado')"
+               onblur="console.log('Campo desenfocado')"
+               onchange="console.log('El valor cambió')"
+               placeholder="Escribe tu nombre" title="Campo obligatorio"><br><br>
+
+        <label for="comentario">Comentario:</label><br>
+        <textarea id="comentario" name="comentario" placeholder="Escribe aquí tu comentario..."></textarea><br><br>
+
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+            <option value="cr">Costa Rica</option>
+            <option value="mx">México</option>
+            <option value="co">Colombia</option>
+        </select><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+    </form>
+
+    <!-- Botón con eventos -->
+    <h3>Botón con eventos</h3>
+    <button onclick="alert('¡Hiciste clic!')">Clic aquí</button>
+    <button ondblclick="alert('¡Doble clic detectado!')">Doble clic</button>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario con JavaScript</title> <!-- Título de la pestaña del navegador -->
+</head>
+
+<body>
+
+    <!-- Línea horizontal para separar secciones -->
+    <hr>
+
+    <!-- Imagen con título (tooltip) y dimensiones definidas -->
+    <img title="Imagen mía" src="yop.jpg" width="200" height="100">
+    <br>
+    <!-- Enlace a Facebook -->
+    <a title="Facebook" href="https://www.facebook.com/" target="_blank">
+        Enlace a mi perfil de Facebook
+    </a>
+    <br> <!-- Salto de línea -->
+
+    <!-- Formulario para ingresar datos -->
+    <form id="miFormulario">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre"><br>
+
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido"><br>
+
+        <label for="password">Contraseña:</label><br>
+        <input type="password" id="password" name="password"><br>
+
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <!-- Selector de edad, que se llenará con JavaScript -->
+        <label for="edad">Edad:</label><br>
+        <select name="edad" id="edad"></select>
+        <br>
+
+        <input type="submit" value="Enviar"> <!-- Botón para enviar el formulario -->
+    </form>
+
+    <hr> <!-- Separador visual -->
+
+    <!-- Aquí se mostrarán los datos ingresados después de enviar el formulario -->
+    <h2>Datos ingresados:</h2>
+    <p id="resultado"></p> <!-- Párrafo vacío donde aparecerán los datos -->
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="script.js"></script>
+    <a href="pagina2.html">Ir a pagina 2
+    </a>
+</body>
+
+</html>
